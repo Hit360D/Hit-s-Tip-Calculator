@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hit's Tip Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="title"><h1>Hit's Tip Calculator</h1></div>
+    <form>
+        <div class="input__field">
+                Bill Amount: $  <input id="amount" type="text" placeholder="$" name="amount"><br><br>
+                Tip Percent: %  <input id="percent" type="text" placeholder="%" name="percent"><br><br>
+                Number of people   <input id="people" type="text" placeholder="#" name="people" value="1"><br><br>
+                Round up?   <input id="round" type="checkbox" name="round" checked><br><br>
+        </div>
+        <div class="btns">
+                <button class="clear" type="button" name="clear">Clear</button>
+                <button class="calculate" type="button" name="calculate">Calculate</button> <br><br>
+        </div>
+        <div class="ans__field">
+
+
+            <div class="ans__table">
+                <div class="row">
+                    <div class="col">Tip Total:</div>
+                    <div class="col" id="tip__total"></div>
+                </div>
+                <div class="row">
+                    <div class="col">Tip Each Person:</div>
+                    <div class="col" id="tip__each__person"></div>
+                </div>
+                <div class="row">
+                    <div class="col">Total (Bill + Tip):</div>
+                    <div class="col" id="total__bt"></div>
+                </div>
+                <div class="row">
+                    <div class="col">Total Each Person:</div>
+                    <div class="col" id="total__each__person"></div>
+                </div>
+            </div>
+
+
+            <!-- <table id="ans__table">
+                <tr>
+                    <td>Tip Total:</td>
+                    <td id="tip__total"></td>
+                </tr>
+                <tr>
+                    <td>Tip Each Person:</td>
+                    <td id="tip__each__person"></td>
+                </tr>
+                <tr>
+                    <td>Total (Bill + Tip):</td>
+                    <td id="total__bt"></td>
+                </tr>
+                <tr>
+                    <td>Total Each Person:</td>
+                    <td id="total__each__person"></td>
+                </tr>
+            </table> -->
+        </div>
+    </form>
+</div>
+
+<footer id="footer">Built by Hit - 2019</footer>
+    
+</body>
+</html>
